@@ -10,6 +10,11 @@ For custom SVG icons, I enhanced the Webpack configuration to handle SVG imports
 
 I wrote a custom animation for the popover. Normally, I use `react-spring` for animations, but I didn't use it here because it was a simple animation. Unfortunately, this library still does not support React 19 (as of 12.02.25).
 
+## **Demo**
+
+https://github.com/user-attachments/assets/975cfbf7-1f0a-4d22-8ec3-687965cad899
+
+
 ## **Project Structure**
 📁 **src/**
 - 📁 **app/**: Core of application with pages, api, layout etc.
