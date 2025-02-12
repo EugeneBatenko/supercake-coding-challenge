@@ -1,0 +1,22 @@
+.dropdown-button {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dropdown-button.open {
+  transition: background-color 0.3s ease-in-out;
+  background-color: var(--color-border);
+}
+
+.dropdown-children {
+  transition:
+    transform 0.4s ease-in-out,
+    opacity 0.3s ease-in-out 0.1s;
+  opacity: 0;
+  transform: scale(0);
+  transform-origin: 120px;
+}
+
+.dropdown-children.open {
+  opacity: 1;
+  transform: scale(1);
+}

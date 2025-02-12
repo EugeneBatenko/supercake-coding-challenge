@@ -1,3 +1,43 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@theme {
+  --color-bg-primary: #f5f7fa;
+  --color-primary: #1369d9;
+  --color-font-primary: #121d2c;
+  --color-border: #e0e8f2;
+  --color-border-active: #327ad9;
+  --color-icon: #848a93;
+  --spacing: 0.25rem;
+}
+
+* {
+  box-sizing: border-box;
+  backface-visibility: hidden;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  min-height: 80vh;
+}
+
+summary::marker {
+  content: none;
+}
+
+input {
+  outline: none;
+}
+
+hr {
+  color: var(--color-border);
+}
